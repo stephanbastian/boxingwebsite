@@ -1,96 +1,1115 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics Code (UA-80654437-2) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80654437-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-80654437-2');
+    </script>
+    <title data-key="title_text">Bokstraining voor en door vrouwen | BoxingFun Amsterdam</title>
+    <!-- Gebruik Font Awesome voor Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Gebruik Google Fonts voor een energieke look -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS Variabelen & Reset --- */
+        :root {
+            --color-primary: #FF0077; /* Electric Pink */
+            --color-primary-dark: #cc005f;
+            --color-secondary: #00FFC0; /* Mint Green Accent */
+            --color-accent: #FFE600; /* Shocking Yellow */
+            --color-dark: #0a0a0a;
+            --color-dark-soft: #1f1f1f;
+            --color-light: #F8F8F8;
+            --font-header: 'Bebas Neue', cursive;
+            --font-body: 'Inter', sans-serif;
+            --neon-glow: 0 0 10px rgba(255, 0, 119, 0.7), 0 0 20px rgba(255, 0, 119, 0.5);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-light);
+            background-color: var(--color-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- Algemene Stijlen --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-header);
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: clamp(4rem, 12vw, 9rem);
+            color: var(--color-light);
+            text-shadow: 4px 4px 0 var(--color-primary);
+            position: relative;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-light);
+            -webkit-text-stroke: 1px var(--color-primary); /* Outline effect */
+            text-shadow: 2px 2px 0 var(--color-secondary);
+        }
+
+        /* Knoppen & Interactie */
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background-color: transparent;
+            color: var(--color-secondary);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            border: 3px solid var(--color-primary);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 0, 119, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            color: var(--color-light);
+            box-shadow: var(--neon-glow);
+            border-color: var(--color-secondary);
+            transform: skew(-5deg);
+        }
+        
+        /* --- Header / Navigatie --- */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-header);
+            font-size: 2rem;
+            color: var(--color-light);
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+        
+        .logo span { color: var(--color-primary); }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: var(--color-light);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--color-primary); }
+
+        /* Taal Switch Stijlen */
+        .language-switch {
+            margin-left: 1.5rem;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            color: var(--color-light);
+            font-family: var(--font-body);
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 0.2rem 0.4rem;
+            margin: 0 0.2rem;
+            transition: all 0.2s;
+            opacity: 0.5;
+        }
+
+        .lang-btn.active {
+            color: var(--color-secondary);
+            opacity: 1;
+            border-bottom: 2px solid var(--color-secondary);
+        }
+
+        /* --- Hero Sectie --- */
+        #hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 0, 119, 0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        /* --- About Sectie (Hersteld) --- */
+        #about {
+            background-color: var(--color-light);
+            color: var(--color-dark);
+            padding-top: 8rem;
+        }
+
+        #about h2 { 
+            color: var(--color-dark); 
+            text-shadow: 3px 3px 0 var(--color-secondary);
+            -webkit-text-stroke: 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 2.5rem;
+            border: 3px solid var(--color-dark);
+            box-shadow: 10px 10px 0 var(--color-primary);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0 var(--color-secondary);
+            border-color: var(--color-primary);
+        }
+
+        .feature-card h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-dark);
+        }
+        
+        .icon-box {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* --- Rooster & Locaties --- */
+        #schedule, #workshops {
+            background-color: var(--color-dark-soft);
+            background-image: radial-gradient(var(--color-dark) 10%, transparent 12%), radial-gradient(var(--color-dark) 10%, transparent 12%);
+            background-size: 15px 15px;
+            background-position: 0 0, 7.5px 7.5px;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .class-card {
+            background: #2a2a2a;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--color-primary);
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        
+        .class-card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--color-secondary);
+        }
+
+        .class-card h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-secondary);
+        }
+
+        .class-card .time, .class-card .location-name {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .class-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* --- Instructrice Sectie (Hersteld) --- */
+        #instructor {
+            background: var(--color-dark);
+            text-align: center;
+        }
+
+        .blob-frame {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .instructor-photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            border: 5px solid var(--color-primary);
+            animation: morph 8s ease-in-out infinite;
+            filter: grayscale(100%) contrast(1.2);
+            transition: filter 0.5s;
+        }
+
+        .instructor-photo:hover {
+            filter: grayscale(0%) contrast(1);
+        }
+
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+
+        .instructor-quote {
+            font-size: 1.5rem;
+            font-family: 'Bebas Neue';
+            color: var(--color-accent);
+            letter-spacing: 2px;
+            margin-top: 1rem;
+        }
+
+        /* --- Tarieven Sectie --- */
+        .price-list {
+            list-style: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 3rem auto 0;
+            text-align: left;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+            font-size: 1.1rem;
+        }
+
+        .price-item:last-child { border-bottom: none; }
+        .price-item .description { color: var(--color-primary); font-weight: 700; }
+        .price-item .amount { color: var(--color-accent); font-weight: 800; }
+
+        /* --- Workshops / Klanten --- */
+        #workshops {
+            background-color: var(--color-light);
+            color: var(--color-dark);
+        }
+
+        #workshops h2 {
+            color: var(--color-dark);
+            text-shadow: 3px 3px 0 var(--color-secondary);
+            -webkit-text-stroke: 0;
+        }
+
+        .client-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .client-tag {
+            background: var(--color-primary);
+            color: var(--color-dark);
+            padding: 0.5rem 1rem;
+            font-weight: 800;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        /* --- Proefles Registratie Formulier --- */
+        #contact {
+            background-color: var(--color-primary);
+            padding-top: 6rem;
+            text-align: center;
+        }
+
+        .contact-box {
+            background: var(--color-dark);
+            display: inline-block;
+            padding: 3rem;
+            border-radius: 20px;
+            border: 2px solid var(--color-accent);
+            max-width: 600px;
+            width: 90%;
+            text-align: left;
+            margin-top: 2rem;
+        }
+        
+        .contact-box h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #333;
+            background-color: #1f1f1f;
+            color: var(--color-light);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 5px var(--color-primary);
+        }
+
+        .contact-email-link {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 3rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-icons a {
+            font-size: 2rem;
+            color: var(--color-accent);
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--color-secondary);
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 5px solid var(--color-accent);
+        }
+        
+        .sponsor-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .sponsor-info p {
+            margin: 0 0.5rem;
+            color: #666;
+        }
+
+        .sponsor-info a {
+            color: var(--color-secondary);
+            text-decoration: none;
+        }
+
+        .sponsor-logo {
+            width: 40px;
+            height: 50px;
+            background-color: var(--color-light);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-header);
+            color: var(--color-dark);
+            font-size: 1.5rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .footer-links a:hover {
+            border-bottom: 1px solid var(--color-secondary);
+            color: var(--color-secondary);
+        }
+
+        .uitsluiting {
+            font-size: 0.8rem;
+            color: #999;
+            max-width: 600px;
+            margin: 0.5rem auto;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+
+        /* Scroll Reveal (JS trigger) */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobiel aanpassingen */
+        @media (max-width: 768px) {
+            .nav-links a { margin-left: 1rem; margin-top: 0.5rem; }
+            .language-switch { margin-left: 1rem; padding-left: 0.5rem; }
+            h1 { font-size: 4rem; }
+            nav { flex-direction: column; align-items: flex-start; }
+            .nav-links { margin-top: 1rem; justify-content: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#hero" class="logo">BOXING <span>FUN</span></a>
+                <div class="nav-links">
+                    <a href="#about" data-key="nav_about">Over Ons</a>
+                    <a href="#schedule" data-key="nav_rooster">Rooster</a>
+                    <a href="#prices" data-key="nav_tarieven">Tarieven</a>
+                    <a href="#workshops" data-key="nav_workshops">Workshops</a>
+                    <a href="#contact" data-key="nav_contact">Proefles</a>
+                    
+                    <div class="language-switch">
+                        <button class="lang-btn" data-lang="nl">NL</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <span class="hero-subtitle" data-key="hero_subtitle">Recreatief boksen voor vrouwen</span>
+            <h1 class="glitch-text" data-key="hero_h1">Power & Focus</h1>
+            <p style="max-width: 600px; font-size: 1.1rem; margin-bottom: 2rem; border-left: 4px solid var(--color-accent); padding-left: 1rem;" data-key="hero_p">
+                Boksen is de ideale full body workout. Je traint je hele lichaam en je leert een techniek die je heel je leven kunt gebruiken.
+            </p>
+            <a href="#schedule" class="btn" data-key="hero_btn">Check het Rooster</a>
+        </div>
+    </section>
+
+    <!-- About Section (Hersteld) -->
+    <section id="about">
+        <div class="container">
+            <h2 class="reveal-element" data-key="about_h2">Waarom BoxingFun?</h2>
+            <div class="about-grid">
+                <div class="feature-card reveal-element" style="transition-delay: 100ms;">
+                    <span class="icon-box">🥊</span>
+                    <h3 data-key="about_card1_h3">Full Body Workout</h3>
+                    <p data-key="about_card1_p">Van je tenen tot je schouders: elke spier wordt ingezet voor kracht en stabiliteit. Goed voor hart, longen en spierconditie.</p>
+                </div>
+                <div class="feature-card reveal-element" style="transition-delay: 200ms;">
+                    <span class="icon-box">🎯</span>
+                    <h3 data-key="about_card2_h3">Techniek & Focus</h3>
+                    <p data-key="about_card2_p">We leren je de basisprincipes van het boksen. De focus ligt op de juiste houding en stoten, zodat je met vertrouwen en controle traint.</p>
+                </div>
+                <div class="feature-card reveal-element" style="transition-delay: 300ms;">
+                    <span class="icon-box">👩‍🎤</span>
+                    <h3 data-key="about_card3_h3">Alleen Vrouwen</h3>
+                    <p data-key="about_card3_p">Een veilige en motiverende omgeving zonder macho cultuur. Onze lessen zijn ontworpen om vrouwen van 18 tot 88 jaar te empoweren.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Locations Section (Rooster) -->
+    <section id="schedule">
+        <div class="container">
+            <h2 class="reveal-element" data-key="schedule_h2">Lesrooster & Locaties</h2>
+            <div class="schedule-grid">
+                <!-- Zaterdag - Oud-West (Ketelhuisplein) -->
+                <div class="class-card reveal-element">
+                    <h3 data-key="schedule_zat_day">Zaterdag</h3>
+                    <span class="time" data-key="schedule_zat_time">11:45 - 13:00 uur</span>
+                    <span class="location-name" data-key="schedule_ow_name">Amsterdam Oud-West</span>
+                    <ul>
+                        <li data-key="schedule_ow_loc_1">Ketelhuisplein 45</li>
+                        <li data-key="schedule_ow_loc_2">Nabij Overtoom/ Kinkerstraat</li>
+                        <li data-key="schedule_ow_loc_3">Tram 1, 3, 7, 11, 17</li>
+                    </ul>
+                </div>
+                <!-- Dinsdag - Oost (Blasiusstraat) -->
+                <div class="class-card reveal-element">
+                    <h3 data-key="schedule_din_day">Dinsdag</h3>
+                    <span class="time" data-key="schedule_din_time">19:30 - 20:45 uur</span>
+                    <span class="location-name" data-key="schedule_oost_name">Amsterdam Oost</span>
+                    <ul>
+                        <li data-key="schedule_oost_loc_1">Blasiusstraat 144 (American Fitness)</li>
+                        <li data-key="schedule_oost_loc_2">Lokatie sportschool American Fitness</li>
+                        <li data-key="schedule_oost_loc_3">Tram 1 & 3. Metro 51, 53, 54</li>
+                    </ul>
+                </div>
+                <!-- Woensdag - Oud-West (Ketelhuisplein) -->
+                <div class="class-card reveal-element">
+                    <h3 data-key="schedule_woe_day">Woensdag</h3>
+                    <span class="time" data-key="schedule_woe_time">20:30 - 21:45 uur</span>
+                    <span class="location-name" data-key="schedule_ow_name">Amsterdam Oud-West</span>
+                    <ul>
+                        <li data-key="schedule_ow_loc_1">Ketelhuisplein 45</li>
+                        <li data-key="schedule_ow_loc_2">Nabij Overtoom/ Kinkerstraat</li>
+                        <li data-key="schedule_ow_loc_3">Tram 1, 3, 7, 17</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 5rem;" class="reveal-element">
+                <a href="#contact" class="btn" data-key="schedule_btn">Meld je aan voor een proefles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section (Hersteld) -->
+    <section id="instructor">
+        <div class="container reveal-element">
+            <h2 data-key="coach_h2">De Creatieve Kracht</h2>
+            <div class="blob-frame">
+                <img src="https://placehold.co/300x300/FF0077/1A1A1A?text=Coach" alt="Instructrice" class="instructor-photo">
+            </div>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;" data-key="coach_quote1">
+                    "Fitness is saai als je het doet omdat het 'moet'. <br>
+                    Ik maak er iets van wat je <strong>wilt</strong> doen."
+                </p>
+                <p data-key="coach_p">Onze instructrice combineert haar achtergrond in creatieve kunst met topsport mentaliteit. Verwacht lessen die voelen als een feestje, maar werken als een bootcamp.</p>
+                <p class="instructor-quote" data-key="coach_quote2">- WE TRAIN BODY & MIND -</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section (Tarieven) -->
+    <section id="prices">
+        <div class="container">
+            <h2 class="reveal-element" data-key="tarieven_h2">Tarieven</h2>
+            <ul class="price-list reveal-element">
+                <li class="price-item">
+                    <span class="description" data-key="tarieven_p1_desc">Proefles (eenmalig)</span>
+                    <span class="amount" data-key="tarieven_p1_amount">€10,-</span>
+                </li>
+                <li class="price-item">
+                    <span class="description" data-key="tarieven_p2_desc">Losse les</span>
+                    <span class="amount" data-key="tarieven_p2_amount">€15,-</span>
+                </li>
+                <li class="price-item">
+                    <span class="description" data-key="tarieven_p3_desc">10-rittenkaart (3 maanden geldig)</span>
+                    <span class="amount" data-key="tarieven_p3_amount">€120,-</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops">
+        <div class="container">
+            <h2 class="reveal-element" data-key="workshops_h2">Workshops & Referenties</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;" data-key="workshops_p">
+                BoxingFun verzorgt ook op maat gemaakte workshops en clinics voor bedrijven, scholen en teams, gericht op teambuilding, stressvermindering en empowerment.
+            </p>
+            
+            <h3 style="font-size: 1.5rem; text-align: center; color: var(--color-dark); margin-bottom: 1.5rem;" data-key="workshops_klanten_h3">Onze Klanten en Partners:</h3>
+            <div class="client-logos reveal-element">
+                <span class="client-tag">Delta Lloyd</span>
+                <span class="client-tag">DNB</span>
+                <span class="client-tag">ING</span>
+                <span class="client-tag">KPMG</span>
+                <span class="client-tag">Arcadis</span>
+                <span class="client-tag">NOS</span>
+                <span class="client-tag">Montessori College Oost</span>
+                <span class="client-tag">KIEM Montessori</span>
+                <span class="client-tag">De Kleine Wereld</span>
+                <span class="client-tag">T-Mobile Wielerteam</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section (Proefles Registratie) -->
+    <section id="contact">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 style="color: var(--color-light); text-shadow: none;" data-key="contact_h2">Meld je aan voor een Proefles</h2>
+            
+            <div class="contact-box reveal-element">
+                <form onsubmit="event.preventDefault(); handleTrialLessonRegistration();">
+                    <p style="color: #ccc; margin-bottom: 2rem;" data-key="contact_form_intro">
+                        Vul het formulier in om je proefles aan te vragen. We nemen zo snel mogelijk contact op om de aanmelding te bevestigen.
+                    </p>
+                    
+                    <div class="form-group">
+                        <label for="location" data-key="form_label_locatie">Gekozen Locatie/Tijd</label>
+                        <select id="location" required>
+                            <option value="" disabled selected data-key="form_select_placeholder">-- Selecteer een optie --</option>
+                            <!-- Opties worden dynamisch gevuld/vertaald door JS -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name" data-key="form_label_naam">Naam</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" data-key="form_label_email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" data-key="form_label_telefoon">Telefoonnummer (optioneel)</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 1rem; border-color: var(--color-light); color: var(--color-light);" data-key="form_submit_btn">Aanvragen Proefles</button>
+                    
+                    <div id="form-message" style="margin-top: 1.5rem; text-align: center; font-weight: 700;"></div>
+                </form>
+            </div>
+            
+            <!-- Social Media & Contact Email -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/boxingFun" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/boxingfun.amsterdam" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <p style="margin-top: 2rem; color: #ccc;" data-key="contact_p_mail">Of mail ons direct:</p>
+            <p class="contact-email-link" style="margin-bottom: 0;">
+                <a href="mailto:info@boxingfun.nl" style="color: var(--color-secondary); font-weight: 800; font-size: 1.2rem;" data-key="contact_email_direct">info@boxingfun.nl</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- AVG Link (Verplaatst naar Footer) -->
+            <div class="footer-links">
+                <a href="av-privacy.html" target="_self" data-key="footer_avg">AVG - Privacyverklaring</a>
+            </div>
+
+            <!-- Sponsor Informatie -->
+            <div class="sponsor-info">
+                <p data-key="footer_sponsor">gesponsord door</p>
+                <a href="http://www.hre-advocaten.nl" target="_blank">www.hre-advocaten.nl</a>
+                <div class="sponsor-logo" title="HRE Advocaten Logo">HRE</div>
+            </div>
+
+            <!-- Uitsluiting -->
+            <p class="uitsluiting" data-key="footer_uitsluiting">
+                BoxingFun is niet aansprakelijk voor geleden schade, letsel of het kwijtraken van persoonlijke eigendommen, kleding &amp; schoeisel.
+            </p>
+
+            <!-- Copyright -->
+            <p class="copyright" data-key="footer_copyright">
+                &copy; www.Boxingfun.nl&nbsp;&nbsp; Update Juli 2025
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Data voor locaties en het proefles formulier
+        const classLocations = [
+            { id: 'zat-ow', day: 'Zaterdag', time: '11:45 - 13:00 uur', nameNL: 'Amsterdam Oud-West', nameEN: 'Amsterdam Old-West', detailsNL: 'Zaterdag 11:45 - 13:00 uur (Oud-West)', detailsEN: 'Saturday 11:45 AM - 1:00 PM (Old-West)' },
+            { id: 'din-oost', day: 'Dinsdag', time: '19:30 - 20:45 uur', nameNL: 'Amsterdam Oost', nameEN: 'Amsterdam East', detailsNL: 'Dinsdag 19:30 - 20:45 uur (Oost)', detailsEN: 'Tuesday 7:30 PM - 8:45 PM (East)' },
+            { id: 'woe-ow', day: 'Woensdag', time: '20:30 - 21:45 uur', nameNL: 'Amsterdam Oud-West', nameEN: 'Amsterdam Old-West', detailsNL: 'Woensdag 20:30 - 21:45 uur (Oud-West)', detailsEN: 'Wednesday 8:30 PM - 9:45 PM (Old-West)' },
+        ];
+
+        // Translatie data
+        const translations = {
+            'nl': {
+                'title_text': 'Bokstraining voor en door vrouwen|Recreatief boksen bij BoxingFun Amsterdam Oud-West en Oost|Outdoor in Amstelveen|Bokslessen 18-88jr',
+                'nav_about': 'Over Ons',
+                'nav_rooster': 'Rooster',
+                'nav_locaties': 'Locaties',
+                'nav_tarieven': 'Tarieven',
+                'nav_workshops': 'Workshops',
+                'nav_contact': 'Proefles',
+                
+                'hero_subtitle': 'Recreatief boksen voor vrouwen',
+                'hero_h1': 'Power & Focus',
+                'hero_p': 'Boksen is de ideale full body workout. Je traint je hele lichaam en je leert een techniek die je heel je leven kunt gebruiken.',
+                'hero_btn': 'Check het Rooster',
+
+                'about_h2': 'Waarom BoxingFun?',
+                'about_card1_h3': 'Full Body Workout',
+                'about_card1_p': 'Van je tenen tot je schouders: elke spier wordt ingezet voor kracht en stabiliteit. Goed voor hart, longen en spierconditie.',
+                'about_card2_h3': 'Techniek & Focus',
+                'about_card2_p': 'We leren je de basisprincipes van het boksen. De focus ligt op de juiste houding en stoten, zodat je met vertrouwen en controle traint.',
+                'about_card3_h3': 'Alleen Vrouwen',
+                'about_card3_p': 'Een veilige en motiverende omgeving zonder macho cultuur. Onze lessen zijn ontworpen om vrouwen van 18 tot 88 jaar te empoweren.',
+
+                'schedule_h2': 'Lesrooster & Locaties',
+                
+                'schedule_zat_day': 'Zaterdag',
+                'schedule_zat_time': '11:45 - 13:00 uur',
+                
+                'schedule_din_day': 'Dinsdag',
+                'schedule_din_time': '19:30 - 20:45 uur',
+                
+                'schedule_woe_day': 'Woensdag',
+                'schedule_woe_time': '20:30 - 21:45 uur',
+                
+                'schedule_ow_name': 'Amsterdam Oud-West',
+                'schedule_ow_loc_1': 'Ketelhuisplein 45',
+                'schedule_ow_loc_2': 'Nabij Overtoom/ Kinkerstraat',
+                'schedule_ow_loc_3': 'Bereikbaar met tram 1, 3, 7, 11, 17.',
+
+                'schedule_oost_name': 'Amsterdam Oost',
+                'schedule_oost_loc_1': 'Blasiusstraat 144 (American Fitness)',
+                'schedule_oost_loc_2': 'Lokatie sportschool American Fitness',
+                'schedule_oost_loc_3': 'Bereikbaar met tram 1 & 3. Metro 51, 53, 54.',
+                
+                'schedule_btn': 'Meld je aan voor een proefles',
+                
+                'coach_h2': 'De Creatieve Kracht',
+                'coach_quote1': '"Fitness is saai als je het doet omdat het \'moet\'. <br>Ik maak er iets van wat je <strong>wilt</strong> doen."',
+                'coach_p': 'Onze instructrice combineert haar achtergrond in creatieve kunst met topsport mentaliteit. Verwacht lessen die voelen als een feestje, maar werken als een bootcamp.',
+                'coach_quote2': '- WE TRAIN BODY & MIND -',
+
+                'tarieven_h2': 'Tarieven',
+                'tarieven_p1_desc': 'Proefles (eenmalig)',
+                'tarieven_p1_amount': '€10,-',
+                'tarieven_p2_desc': 'Losse les',
+                'tarieven_p2_amount': '€15,-',
+                'tarieven_p3_desc': '10-rittenkaart (3 maanden geldig)',
+                'tarieven_p3_amount': '€120,-',
+
+                'workshops_h2': 'Workshops & Referenties',
+                'workshops_p': 'BoxingFun verzorgt ook op maat gemaakte workshops en clinics voor bedrijven, scholen en teams, gericht op teambuilding, stressvermindering en empowerment.',
+                'workshops_klanten_h3': 'Onze Klanten en Partners:',
+
+                'contact_h2': 'Meld je aan voor een Proefles',
+                'contact_form_intro': 'Vul het formulier in om je proefles aan te vragen. We nemen zo snel mogelijk contact op om de aanmelding te bevestigen.',
+                'form_label_locatie': 'Gekozen Locatie/Tijd',
+                'form_select_placeholder': '-- Selecteer een optie --',
+                'form_label_naam': 'Naam',
+                'form_label_email': 'E-mail',
+                'form_label_telefoon': 'Telefoonnummer (optioneel)',
+                'form_submit_btn': 'Aanvragen Proefles',
+                'contact_p_mail': 'Of mail ons direct:',
+                'contact_email_direct': 'info@boxingfun.nl',
+                'form_message_success': 'Bedankt voor je aanvraag! We nemen snel contact met je op.',
+                'form_message_error': 'Er is een fout opgetreden. Probeer het later opnieuw.',
+
+                'footer_avg': 'AVG - Privacyverklaring',
+                'footer_sponsor': 'gesponsord door',
+                'footer_uitsluiting': 'BoxingFun is niet aansprakelijk voor geleden schade, letsel of het kwijtraken van persoonlijke eigendommen, kleding & schoeisel.',
+                'footer_copyright': '&copy; www.Boxingfun.nl Update Juli 2025'
+            },
+            'en': {
+                'title_text': 'Boxing Training for and by Women|Recreational Boxing at BoxingFun Amsterdam Old-West and East|Outdoor in Amstelveen|Boxing Lessons 18-88yrs',
+                'nav_about': 'About Us',
+                'nav_rooster': 'Schedule',
+                'nav_locaties': 'Locations',
+                'nav_tarieven': 'Prices',
+                'nav_workshops': 'Workshops',
+                'nav_contact': 'Trial Class',
+                
+                'hero_subtitle': 'Recreational Boxing for Women',
+                'hero_h1': 'Power & Focus',
+                'hero_p': 'Boxing is the ideal full body workout. You train your entire body and learn a technique you can use your whole life.',
+                'hero_btn': 'Check the Schedule',
+
+                'about_h2': 'Why BoxingFun?',
+                'about_card1_h3': 'Full Body Workout',
+                'about_card1_p': 'From your toes to your shoulders: every muscle is engaged for strength and stability. Great for heart, lungs, and muscle condition.',
+                'about_card2_h3': 'Technique & Focus',
+                'about_card2_p': 'We teach you the fundamentals of boxing. The focus is on correct posture and punches, so you train with confidence and control.',
+                'about_card3_h3': 'Women Only',
+                'about_card3_p': 'A safe and motivating environment without macho culture. Our classes are designed to empower women from 18 to 88 years old.',
+
+                'schedule_h2': 'Schedule & Locations',
+
+                'schedule_zat_day': 'Saturday',
+                'schedule_zat_time': '11:45 AM - 1:00 PM',
+                
+                'schedule_din_day': 'Tuesday',
+                'schedule_din_time': '7:30 PM - 8:45 PM',
+                
+                'schedule_woe_day': 'Wednesday',
+                'schedule_woe_time': '8:30 PM - 9:45 PM',
+
+                'schedule_ow_name': 'Amsterdam Old-West',
+                'schedule_ow_loc_1': 'Ketelhuisplein 45',
+                'schedule_ow_loc_2': 'Near Overtoom/ Kinkerstraat',
+                'schedule_ow_loc_3': 'Accessible by tram 1, 3, 7, 11, 17.',
+
+                'schedule_oost_name': 'Amsterdam East',
+                'schedule_oost_loc_1': 'Blasiusstraat 144 (American Fitness)',
+                'schedule_oost_loc_2': 'Location gym American Fitness',
+                'schedule_oost_loc_3': 'Accessible by tram 1 & 3. Metro 51, 53, 54.',
+                
+                'schedule_btn': 'Sign Up for a Trial Class',
+
+                'coach_h2': 'The Creative Force',
+                'coach_quote1': '"Fitness is boring if you do it because you \'have to\'. <br>I make it something you <strong>want</strong> to do."',
+                'coach_p': 'Our instructor combines her background in creative arts with a top-sport mentality. Expect classes that feel like a party but work like a bootcamp.',
+                'coach_quote2': '- WE TRAIN BODY & MIND -',
+
+                'tarieven_h2': 'Prices',
+                'tarieven_p1_desc': 'Trial Lesson (one-time)',
+                'tarieven_p1_amount': '€10,-',
+                'tarieven_p2_desc': 'Single Class',
+                'tarieven_p2_amount': '€15,-',
+                'tarieven_p3_desc': '10-Class Card (valid for 3 months)',
+                'tarieven_p3_amount': '€120,-',
+                
+                'workshops_h2': 'Workshops & References',
+                'workshops_p': 'BoxingFun also provides customized workshops and clinics for companies, schools, and teams, focused on teambuilding, stress reduction, and empowerment.',
+                'workshops_klanten_h3': 'Our Clients and Partners:',
+
+                'contact_h2': 'Sign Up for a Trial Class',
+                'contact_form_intro': 'Please fill out the form to request your trial lesson. We will contact you as soon as possible to confirm the registration.',
+                'form_label_locatie': 'Chosen Location/Time',
+                'form_select_placeholder': '-- Select an option --',
+                'form_label_naam': 'Name',
+                'form_label_email': 'Email',
+                'form_label_telefoon': 'Phone Number (optional)',
+                'form_submit_btn': 'Request Trial Class',
+                'contact_p_mail': 'Or email us directly:',
+                'contact_email_direct': 'info@boxingfun.nl',
+                'form_message_success': 'Thank you for your request! We will contact you shortly.',
+                'form_message_error': 'An error occurred. Please try again later.',
+
+                'footer_avg': 'Privacy Policy (AVG)',
+                'footer_sponsor': 'sponsored by',
+                'footer_uitsluiting': 'BoxingFun is not liable for suffered damage, injury, or the loss of personal belongings, clothing & footwear.',
+                'footer_copyright': '&copy; www.Boxingfun.nl Update July 2025'
+            }
+        };
+
+        let currentLang = 'nl'; // Standaardtaal
+
+        function updateFormOptions(lang) {
+            const select = document.getElementById('location');
+            const placeholderText = translations[lang]['form_select_placeholder'];
+            
+            // Leeg de huidige opties (behalve de placeholder)
+            select.innerHTML = `<option value="" disabled selected>${placeholderText}</option>`;
+
+            // Voeg nieuwe opties toe
+            classLocations.forEach(loc => {
+                const option = document.createElement('option');
+                option.value = loc.id;
+                option.textContent = lang === 'nl' ? loc.detailsNL : loc.detailsEN;
+                select.appendChild(option);
+            });
+        }
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang; // Update HTML lang attribute
+
+            // Update alle elementen met een data-key
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                const translation = translations[lang][key];
+
+                if (translation) {
+                    // Gebruik innerHTML voor elementen met opmaak of de title tag
+                    if (element.tagName === 'H1' || element.tagName === 'P' || element.tagName === 'TITLE') {
+                        element.innerHTML = translation;
+                    } else {
+                        element.textContent = translation;
+                    }
+                }
+            });
+
+            // Update actieve knoppen
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Update het proeflesformulier
+            updateFormOptions(lang);
+        }
+
+        // Simuleer registratie: Omdat er geen backend is, tonen we een succesbericht.
+        function handleTrialLessonRegistration() {
+            const location = document.getElementById('location').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const messageElement = document.getElementById('form-message');
+
+            if (!location || !name || !email) {
+                messageElement.textContent = currentLang === 'nl' ? 'Vul alstublieft alle verplichte velden in.' : 'Please fill in all required fields.';
+                messageElement.style.color = 'var(--color-primary)';
+                return;
+            }
+
+            // In een echte app zou je hier een fetch() call naar je API of e-mailservice doen.
+            console.log("Registratiegegevens verstuurd:", { location, name, email, phone });
+
+            // Simuleer een succesvolle verzending
+            messageElement.textContent = translations[currentLang]['form_message_success'];
+            messageElement.style.color = 'var(--color-secondary)';
+
+            // Reset het formulier
+            document.getElementById('location').value = '';
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+        }
+
+        // --- Event Listeners en Initialisatie ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialiseer de taalschakelaar
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    switchLanguage(lang);
+                });
+            });
+
+            // Stel de initiële taal in op basis van de default
+            switchLanguage(currentLang);
+            
+            // Smooth scroll voor interne links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Scroll Reveal Animatie (Intersection Observer)
+            const observerOptions = {
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-element').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Simpele interactie: Header background verandering
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
+                    header.style.padding = '1rem 0';
+                } else {
+                    header.style.boxShadow = 'none';
+                    header.style.padding = '1.5rem 0';
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>
